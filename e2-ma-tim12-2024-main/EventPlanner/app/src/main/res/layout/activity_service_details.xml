@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.services.ServiceDetailsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".activities.services.ServiceDetailsActivity">
+
+        <!-- Product Image -->
+        <ImageView
+            android:id="@+id/service_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="Product Image"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="16:9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Previous Image Button -->
+        <Button
+            android:id="@+id/previous_image"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="❮"
+            android:layout_marginStart="16dp"
+            android:onClick="showPreviousImage"
+            app:layout_constraintTop_toTopOf="@+id/service_image"
+            app:layout_constraintStart_toStartOf="@+id/service_image"
+            app:layout_constraintBottom_toBottomOf="@+id/service_image" />
+
+        <!-- Next Image Button -->
+        <Button
+            android:id="@+id/next_image"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="❯"
+            android:layout_marginEnd="16dp"
+            android:onClick="showNextImage"
+            app:layout_constraintTop_toTopOf="@+id/service_image"
+            app:layout_constraintEnd_toEndOf="@+id/service_image"
+            app:layout_constraintBottom_toBottomOf="@+id/service_image" />
+
+        <!-- Product Name -->
+        <TextView
+            android:id="@+id/service_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/service_image"
+            android:padding="16dp"
+            android:text="Name"
+            android:gravity="start" />
+
+        <!-- Product Availability -->
+        <TextView
+            android:id="@+id/service_availability"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="end"
+            android:padding="16dp"
+            android:text="Availability"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/service_image" />
+
+        <!-- Product Description -->
+        <TextView
+            android:id="@+id/service_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/service_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="16dp"
+            android:text="Description" />
+
+        <!-- Category -->
+        <TextView
+            android:id="@+id/service_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/service_description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="16dp"
+            android:text="Category" />
+
+        <!-- Subcategory -->
+        <TextView
+            android:id="@+id/service_subcategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/service_category"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="16dp"
+            android:text="Subcategory" />
+
+        <!-- Product Types -->
+        <TextView
+            android:id="@+id/service_types"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/service_subcategory"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="16dp"
+            android:text="Types" />
+
+        <!-- Specifics -->
+        <TextView
+            android:id="@+id/service_specifics"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/service_types"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="16dp"
+            android:text="Specifics" />
+
+        <!-- Duration -->
+        <TextView
+            android:id="@+id/service_duration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/service_specifics"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="16dp"
+            android:text="Duration" />
+
+        <!-- Deadline for Reservation -->
+        <TextView
+            android:id="@+id/service_reservation_deadline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/service_duration"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="16dp"
+            android:text="Deadline for Reservation" />
+
+        <!-- Deadline for Cancellation -->
+        <TextView
+            android:id="@+id/service_cancellation_deadline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/service_reservation_deadline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="16dp"
+            android:text="Deadline for Cancellation" />
+
+
+
+        <!-- Product Event -->
+        <TextView
+            android:id="@+id/service_event"
+            android:layout_width="126dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="12dp"
+            android:text="Choose event for product: "
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/service_types"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/service_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/service_cancellation_deadline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="16dp"
+            android:text="Price"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <!-- Product Discount -->
+        <TextView
+            android:id="@+id/service_discount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/service_price"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="16dp"
+            android:text="Discount" />
+
+        <!-- Spinner for Events -->
+
+        <TextView
+            android:id="@+id/product_event"
+            android:layout_width="126dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="12dp"
+            android:text="Choose event for product: "
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/service_discount"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/spinEvent"
+            android:layout_width="229dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@string/category"
+            android:text="@string/category"
+            android:tooltipText="@string/category"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/service_discount"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/employee1"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="12dp"
+            android:text="Choose employee"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/product_event"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/spinEmployee1"
+            android:layout_width="150dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="1dp"
+            android:contentDescription="@string/category"
+            android:text="@string/category"
+            android:tooltipText="@string/category"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/product_event"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/addToFavoritesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Add to Favorites"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.859"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spinEmployee1"
+            android:visibility="gone"/>
+
+        <!-- Buy Product Button -->
+        <Button
+            android:id="@+id/buyProductButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Reserve service"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.859"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/addToFavoritesButton"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/buyProductButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="16dp" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:id="@+id/report_creation_frag"
+    tools:context=".fragments.reviews.ReportCreationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="15sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold|italic"
+            android:text="You are reporting:" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_margin="15sp"
+            android:padding="14sp"
+            android:layout_height="180sp"
+            android:background="@drawable/border_background">
+            <TextView
+                android:id="@+id/textViewGrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView
+                android:id="@+id/textViewComment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginTop="25sp"
+                app:layout_constraintTop_toBottomOf="@id/textViewGrade"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/reporting_reason_et"
+            android:layout_width="match_parent"
+            android:layout_height="65sp"
+            android:textSize="20sp"
+            android:hint="Reporting reason:" />
+        <LinearLayout
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/confirm_report_btn"
+                android:layout_width="180sp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Submit" />
+            <Button
+                android:id="@+id/cancel_report_btn"
+                android:layout_width="180sp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Cancel" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

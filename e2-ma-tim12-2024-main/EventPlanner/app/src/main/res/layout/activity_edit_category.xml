@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".activities.categories.EditCategoryActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="55dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:text="Edit category"
+        android:layout_marginBottom="3dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/product_name"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/event_type_name_field"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="@string/product_name"
+        android:enabled="false"
+        android:inputType="none"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/description"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/event_type_description_field"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="@string/description"
+        android:inputType="text"
+        />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Confirm"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+</LinearLayout>

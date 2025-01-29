@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="380dp"
+    android:layout_height="580dp"
+    android:layout_gravity="center"
+    app:cardCornerRadius="18dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10sp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="Working hours"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:height="35sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="day"
+                    android:textSize="25sp" />
+                <TextView
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="from"
+                    android:textSize="25sp" />
+                <TextView
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="to"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:height="35sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:text="Monday"
+                    android:textSize="25sp" />
+                <EditText
+                    android:id="@+id/monday_from"
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:tooltipText="hh:mm"
+                    android:inputType="time"/>
+                <EditText
+                    android:id="@+id/monday_to"
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:tooltipText="hh:mm"
+                    android:inputType="time"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:height="35sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:text="Tuesday"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/tuesday_from"
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:tooltipText="hh:mm"
+                    android:inputType="time"/>
+                <EditText
+                    android:id="@+id/tuesday_to"
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:tooltipText="hh:mm"
+                    android:inputType="time"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:height="35sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:text="Wednesday"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/wednesday_from"
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:tooltipText="hh:mm"
+                    android:inputType="time"/>
+                <EditText
+                    android:id="@+id/wednesday_to"
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:tooltipText="hh:mm"
+                    android:inputType="time"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:height="35sp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:text="Thursday"
+                    android:textSize="25sp" />
+                <EditText
+                    android:id="@+id/thursday_from"
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:tooltipText="hh:mm"
+                    android:inputType="time"/>
+                <EditText
+                    android:id="@+id/thursday_to"
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:tooltipText="hh:mm"
+                    android:inputType="time"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:height="35sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:text="Friday"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/friday_from"
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:tooltipText="hh:mm"
+                    android:inputType="time"/>
+
+                <EditText
+                    android:id="@+id/friday_to"
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:tooltipText="hh:mm"
+                    android:inputType="time"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:height="35sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:text="Saturday"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/saturday_from"
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:tooltipText="hh:mm"
+                    android:inputType="time"/>
+                <EditText
+                    android:id="@+id/saturday_to"
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:tooltipText="hh:mm"
+                    android:inputType="time"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:height="35sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:text="Sunday"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/sunday_from"
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:tooltipText="hh:mm"
+                    android:inputType="time"/>
+                <EditText
+                    android:id="@+id/sunday_to"
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:tooltipText="hh:mm"
+                    android:inputType="time"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:height="35sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/confirm_wh_btn"
+                android:layout_width="175sp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:text="@string/confirm" />
+
+            <Button
+                android:id="@+id/cancel_wh_btn"
+                android:layout_width="175sp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:text="@string/cancel" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

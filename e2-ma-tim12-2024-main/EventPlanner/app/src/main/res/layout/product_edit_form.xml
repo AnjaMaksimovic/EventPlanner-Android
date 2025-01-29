@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:id="@+id/product_form">
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2dp"
+            android:backgroundTint="#FDFCFC"
+            android:contentDescription="@string/delete"
+            app:srcCompat="@drawable/ic_back" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:text="@string/edit_form_title"
+            android:layout_marginBottom="38dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/category"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/categoryEditText"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="0.5"
+                android:contentDescription="@string/category"
+                android:enabled="false"
+                android:inputType="none"
+                android:text="@string/initial_category"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/subcategory"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/btnSubcategory"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="0.5"
+                android:contentDescription="@string/subcategory"
+                android:entries="@array/subcategory_values"
+                android:text="@string/subcategory"
+                android:tooltipText="@string/subcategory" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/product_name"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/name_field"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:hint="Enter product name"
+                android:inputType="text"
+                android:text="Photo Book" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/description"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/description_field"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:hint="Enter description"
+                android:inputType="text"
+                android:text="Printed album used to preserve and display yout photos" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/product_price"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/price_field"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:hint="Enter product price"
+                android:inputType="numberDecimal"
+                android:text="750" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/discount"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/discount_field"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:hint="Enter discount"
+                android:inputType="numberDecimal"
+                android:text="10%" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4dp"
+                android:text="@string/event_types"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="3dp"
+                android:textSize="18dp"
+                android:text="@string/event_types"/>
+            <CheckBox
+                android:id="@+id/private_events_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/private_events"/>
+            <CheckBox
+                android:id="@+id/corporate_events_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/corporate_events"/>
+            <CheckBox
+                android:id="@+id/educational_events_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/educational_events"/>
+            <CheckBox
+                android:id="@+id/cultural_events_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cultural_entertainment_events"/>
+            <CheckBox
+                android:id="@+id/sporting_events_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sporting_events"/>
+            <CheckBox
+                android:id="@+id/political_events_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/political_events"/>
+            <CheckBox
+                android:id="@+id/charity_events_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/charity_events"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="10dp">
+
+
+            <EditText
+                android:id="@+id/photo_path_edittext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/photo_path_hint"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:maxLines="1"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="4dp"/>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_add_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:src="@drawable/baseline_add_circle"
+                app:borderWidth="0dp"
+                app:elevation="8dp"
+                app:fabSize="normal"
+                app:maxImageSize="66dp"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Material3.Fab"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <CheckBox
+                android:id="@+id/availability_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/availability"
+                android:layout_marginStart="8dp" />
+
+            <CheckBox
+                android:id="@+id/visibility_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:layout_marginStart="32dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/visibility"
+                android:layout_marginStart="8dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/confirm"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.registration.OwnerRegistration"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:id="@+id/registration_form_PUPV">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Owner information"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/email_address_field_PUPV"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/password_field_PUPV"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/repeat_field_PUPV"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="@string/password_repeat"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/name_field_PUPV"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/lastname_field_PUPV"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="@string/lastname"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/address_field_PUPV"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Owner adress"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/phone_field_PUPV"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="@string/phone"
+            android:inputType="phone|number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="5dp">
+
+            <EditText
+                android:id="@+id/photo_path_edittext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/photo_path_hint"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:maxLines="1"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="4dp"/>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_add_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:src="@drawable/baseline_add_circle"
+                app:borderWidth="0dp"
+                app:elevation="8dp"
+                app:fabSize="normal"
+                app:maxImageSize="66dp"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Material3.Fab"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Company information"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/company_email_address_field_PUPV"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/company_field_PUPV"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/company_address_field_PUPV"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Company adress"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/company_phone_field_PUPV"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="@string/phone"
+            android:inputType="phone|number" />
+
+        <EditText
+            android:id="@+id/company_description_field_PUPV"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="25dp"
+            android:ems="10"
+            android:hint="Description"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="5dp">
+
+            <EditText
+                android:id="@id/photo_path_edittext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/photo_path_hint"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:maxLines="1"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="4dp"/>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@id/fab_add_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:src="@drawable/baseline_add_circle"
+                app:borderWidth="0dp"
+                app:elevation="8dp"
+                app:fabSize="normal"
+                app:maxImageSize="66dp"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Material3.Fab"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Category"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Catering facilities"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accomodation"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Music and entertainment"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Photo and video"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Care and beauty"
+            android:layout_marginBottom="20dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/event_type"
+            android:textAlignment="center"
+            android:textSize="22sp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/private_events"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/corporate_events"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/educational_events"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cultural_entertainment_events"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sporting_events"
+            android:layout_marginBottom="20dp"/>
+
+
+        <!-- Radno vreme -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Working Hours"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+
+        <!-- Ponedeljak -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monday"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_monday"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text_monday_from"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:hint="hh:mm" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text_monday_to"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:hint="hh:mm" />
+            </LinearLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Utorak -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuesday"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_tuesday"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text_tuesday_from"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:hint="hh:mm" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text_tuesday_to"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:hint="hh:mm" />
+            </LinearLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Sreda -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wednesday"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_wednesday"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text_wednesday_from"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:hint="hh:mm" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text_wednesday_to"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:hint="hh:mm" />
+            </LinearLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Cetvrtak -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thursday"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_thursday"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text_thursday_from"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:hint="hh:mm" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text_thursday_to"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:hint="hh:mm" />
+            </LinearLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Petak -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friday"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_friday"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text_friday_from"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:hint="hh:mm" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text_friday_to"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:hint="hh:mm" />
+            </LinearLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Subota -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saturday"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_saturday"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text_saturday_from"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:hint="hh:mm" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text_saturday_to"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:hint="hh:mm" />
+            </LinearLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Subota -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunday"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_sunday"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text_sunday_from"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:hint="hh:mm" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text_sunday_to"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:hint="hh:mm" />
+            </LinearLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/register_btn_PUPV"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="80dp"
+            android:text="@string/confirmation" />
+    </LinearLayout>
+</ScrollView>

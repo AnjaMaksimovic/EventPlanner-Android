@@ -1,0 +1,153 @@
+<resources>
+    <string name="app_name">EventPlanner</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="registration_title">Registration</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="password_repeat">Repeat your password</string>
+    <string name="working_hours">Working hours picker</string>
+    <string name="name">First name</string>
+    <string name="lastname">Last name</string>
+    <string name="location">Location</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
+    <string name="phone">Phone number</string>
+    <string name="category">Category</string>
+    <string name="employees">Employees</string>
+    <string name="subcategory">Subcategory</string>
+    <string name="employee">Employee</string>
+    <string name="specifics">Specifics</string>
+    <string name="description">Description</string>
+    <string name="event_type">Event type</string>
+    <string name="private_events">Private events</string>
+    <string name="corporate_events">Corporate events</string>
+    <string name="educational_events">Educational events</string>
+    <string name="cultural_entertainment_events">Cultural and entertainment events</string>
+    <string name="sporting_events">Sporting events</string>
+    <string name="charity_events">Charity events</string>
+    <string name="political_events">Political events</string>
+    <string name="price_range">Price range</string>
+    <string name="visibility">Visibility</string>
+    <string name="availability">Availability</string>
+    <string name="available">Available</string>
+    <string name="unavailable">Unavailable</string>
+    <string name="product_form_title">Create a new product</string>
+    <string name="service_form_title">Create a new service</string>
+    <string name="package_form_title">Create a new package</string>
+    <string name="package_edit_form_title">Edit package</string>
+    <string name="service_edit_form_title">Edit service</string>
+    <string name="edit_form_title">Edit product</string>
+    <string name="user_form_title">User profile</string>
+    <string name="edit_pricelist_form_title">Edit price and discount</string>
+    <string name="product_name">Name</string>
+    <string name="discount">Discount</string>
+    <string name="duration">Duration</string>
+    <string name="cancelation_deadline">Cancelation deadline</string>
+    <string name="reservation_deadline">Reservation deadline</string>
+    <string name="event_types">Event types</string>
+    <string name="confirmation_method">Method of booking confirmation</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="confirm">Confirm</string>
+    <string name="confirmation">Confirm registration</string>
+    <string name="user_info">"User info"</string>
+    <string name="reportee_info">"Reportee info"</string>
+    <string name="select_employees">Select employees</string>
+    <string name="subcategory_suggestion">Suggest new subcategory</string>
+    <string name="photo_path_hint">Select photos</string>
+    <string name="details_info">Info</string>
+    <string name="work_calendar">Work calendar</string>
+    <string name="add_new_employee">Register employee</string>
+    <string name="employees_info_tab">Employees</string>
+    <string name="navigation_drawer_open" translatable="false">Navigation Drawer Open</string>
+    <string name="navigation_drawer_close" translatable="false">Navigation Drawer Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="products">Products</string>
+    <string name="services">Services</string>
+    <string name="packages">Packages</string>
+    <string name="package_name">Event recording</string>
+    <string name="package_description">All the necessary items to decorate your wedding</string>
+    <string name="new_product">New product</string>
+    <string name="new_package">New package</string>
+    <string name="new_service">New service</string>
+    <string name="package_item1">• Album with 50 photos</string>
+    <string name="package_item2">• Shooting with a drone</string>
+    <string name="package_item3">• Event photography</string>
+    <string name="language">Language</string>
+    <string name="settings">Settings</string>
+    <string name="filters">Filters</string>
+    <string name="company">Company</string>
+    <string name="pricelist">Pricelist</string>
+    <string name="company_name">CompanyName</string>
+    <string name="delete">Delete</string>
+    <string name="product_price">Price</string>
+    <string name="initial_category">Music and entertainment</string>
+    <string name="photo_book">Photo book</string>
+    <string name="photo_book_description">Photo book with your photos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="sign_in">Sign in</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="create_event">Create new event</string>
+    <string name="create_event_title">Create event</string>
+    <string name="event_name">Name</string>
+    <string name="event_privacy_private">Private</string>
+    <string name="event_privacy_open">Open</string>
+    <string name="event_type_option1">Wedding</string>
+    <string name="event_type_option2">Birthday party</string>
+    <string name="event_type_option3">Music festival</string>
+    <string name="event_type_option4">Other</string>
+    <string name="event_creation_type">Type</string>
+    <string name="set_event_type">Set type</string>
+    <string name="event_description">Description</string>
+    <string name="event_guest_number">Guest number</string>
+    <string name="event_privacy_rules">Privacy</string>
+    <string name="event_set_privacy">Set privacy</string>
+    <string name="event_location">Location</string>
+    <string name="event_km">Max km</string>
+    <string name="event_date">Date</string>
+    <string name="event_submit">Submit</string>
+    <string name="register">Register</string>
+    <string name="event_list">Events</string>
+    <string name="all_companies">All companies</string>
+    <string name="event">Event</string>
+    <string name="budget">Budget</string>
+    <string name="budget_plan">Budget plan</string>
+    <string name="event_category_suggestion">Product and services suggestions</string>
+    <string name="event_category_suggestion_desc">(based on your event type)</string>
+    <string name="planned_budget_items">Planned items</string>
+    <string name="nav_home_page">Home page</string>
+    <string name="purchased_items">Bought</string>
+    <string name="tab_event_agenda">Agenda</string>
+    <string name="tab_event_guests">Guests</string>
+    <string name="tab_event_info">Info</string>
+    <string name="new_event_activity">New activity</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="comments">Comments</string>
+
+    <string-array name="age_ranges">
+        <item>0-3</item>
+        <item>3-10</item>
+        <item>10-18</item>
+        <item>18-30</item>
+        <item>30-50</item>
+        <item>50-70</item>
+        <item>70+</item>
+    </string-array>
+
+</resources>

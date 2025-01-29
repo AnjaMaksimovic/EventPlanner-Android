@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.events.EventGuestFragment">
+
+
+    <Button
+        android:id="@+id/addNewGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="16dp"
+        android:text="New guest"
+        android:backgroundTint="#E3D2E6"
+        app:icon="@drawable/ic_add_24dp"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        tools:ignore="TextContrastCheck"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/export_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Export to PDF"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toTopOf="@id/addNewGuest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/addNewGuest"
+        app:layout_constraintStart_toEndOf="@id/addNewGuest" />
+
+
+    <RelativeLayout
+        android:id="@+id/scroll_event_guests_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/addNewGuest"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

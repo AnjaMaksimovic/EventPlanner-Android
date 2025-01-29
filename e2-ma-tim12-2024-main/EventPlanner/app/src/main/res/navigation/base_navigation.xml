@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/base_navigation"
+    app:startDestination="@+id/nav_home_page"
+    >
+
+
+    <activity
+        android:id="@+id/nav_package_res"
+        android:name="com.example.eventplanner.activities.packages.ReservationForPackageActivity"
+        android:label="Package reservation"
+        tools:layout="@layout/fragment_settings"
+        app:popUpTo="@+id/nav_products"
+        app:popUpToInclusive="true"
+        />
+
+    <fragment
+        android:id="@+id/nav_user_profile"
+        android:name="com.example.eventplanner.fragments.user.UserProfileFragment"
+        android:label="Favourites"
+        app:popUpTo="@+id/nav_user_profile"
+        app:popUpToInclusive="true"
+        tools:layout="@layout/fragment_favourites" />
+
+    <fragment
+        android:id="@+id/nav_home_page"
+        android:name="com.example.eventplanner.fragments.HomePageFragment"
+        tools:layout="@layout/fragment_settings"
+        app:popUpTo="@+id/nav_package_res"
+        app:popUpToInclusive="true"
+        />
+
+    <fragment
+        android:id="@+id/nav_company"
+        android:name="com.example.eventplanner.fragments.company.CompanyPageFragment"
+        android:label="Company"
+        tools:layout="@layout/fragment_settings"
+        app:popUpTo="@+id/nav_products"
+        app:popUpToInclusive="true"
+        />
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.example.eventplanner.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login"
+        app:popUpTo="@+id/nav_login"
+        app:popUpToInclusive="true"
+        />
+
+    <fragment
+        android:id="@+id/nav_event_creation"
+        android:name="com.example.eventplanner.fragments.events.EventCreationFragment"
+        android:label="Event Creation"
+        tools:layout="@layout/fragment_event_creation"
+        app:popUpTo="@+id/nav_products"
+        app:popUpToInclusive="true"
+        />
+
+    <fragment
+        android:id="@+id/nav_events"
+        android:name="com.example.eventplanner.fragments.events.EventPageFragment"
+        android:label="Events"
+        tools:layout="@layout/fragment_event_page"
+        app:popUpTo="@+id/nav_events"
+        app:popUpToInclusive="true"
+        />
+
+    <fragment
+        android:id="@+id/nav_user_reports"
+        android:name="com.example.eventplanner.fragments.user.UserReportsFragment"
+        android:label="User reports"
+        tools:layout="@layout/fragment_user_reports"
+        app:popUpTo="@+id/nav_user_reports"
+        app:popUpToInclusive="true"
+        />
+
+    <fragment
+        android:id="@+id/nav_employees_info"
+        android:name="com.example.eventplanner.fragments.stakeholders.EmployeesFragment"
+        android:label="Employees"
+        app:popUpTo="@+id/nav_products"
+        app:popUpToInclusive="true"
+        tools:layout="@layout/fragment_employees" />
+
+    <fragment
+        android:id="@+id/nav_event_type"
+        android:name="com.example.eventplanner.fragments.events.EventTypeFragment"
+        android:label="Event type"
+        app:popUpTo="@+id/nav_products"
+        app:popUpToInclusive="true"
+        tools:layout="@layout/fragment_employees" />
+
+    <fragment
+        android:id="@+id/nav_categories"
+        android:name="com.example.eventplanner.fragments.categories.CategorySubcategoryFragment"
+        android:label="Categories"
+        app:popUpTo="@+id/nav_products"
+        app:popUpToInclusive="true"
+        tools:layout="@layout/fragment_employees" />
+
+
+    <fragment
+        android:id="@+id/nav_pricelist"
+        android:name="com.example.eventplanner.fragments.pricelist.PricelistPageFragment"
+        android:label="Products pricelist"
+        app:popUpTo="@+id/nav_products_pricelist"
+        app:popUpToInclusive="true"
+        tools:layout="@layout/fragment_products_pricelist" />
+
+    <fragment
+        android:id="@+id/nav_companies_list"
+        android:name="com.example.eventplanner.fragments.company.AllCompaniesFragment"
+        android:label="Companies list"
+        app:popUpTo="@+id/nav_companies_list"
+        app:popUpToInclusive="true"
+        tools:layout="@layout/fragment_all_companies" />
+
+    <fragment
+        android:id="@+id/nav_favourites"
+        android:name="com.example.eventplanner.fragments.favourites.FavouritesFragment"
+        android:label="Favourites"
+        app:popUpTo="@+id/nav_favourites"
+        app:popUpToInclusive="true"
+        tools:layout="@layout/fragment_favourites" />
+
+    <fragment
+        android:id="@+id/nav_subcategories"
+        android:name="com.example.eventplanner.fragments.categories.SubcategoriesPageFragment"
+        android:label="Categories"
+        app:popUpTo="@+id/nav_products"
+        app:popUpToInclusive="true"
+        tools:layout="@layout/fragment_employees" />
+
+    <fragment
+        android:id="@+id/reviewReportsListFragment"
+        android:name="com.example.eventplanner.fragments.reviews.ReviewReportsListFragment"
+        android:label="fragment_review_reports_list"
+        tools:layout="@layout/fragment_review_reports_list" />
+    <fragment
+        android:id="@+id/reservationsListFragment"
+        android:name="com.example.eventplanner.fragments.reservations.ReservationsListFragment"
+        android:label="fragment_reservations_list"
+        tools:layout="@layout/fragment_reservations_list" />
+    <fragment
+        android:id="@+id/notificationsPageFragment"
+        android:name="com.example.eventplanner.fragments.system.NotificationsPageFragment"
+        android:label="fragment_notifications_list"
+        tools:layout="@layout/fragment_notifications_list" />
+
+    <fragment
+        android:id="@+id/pupv_requests"
+        android:name="com.example.eventplanner.fragments.regRequest.AllRequestsFragment"
+        android:label="Registration requests"
+        tools:layout="@layout/fragment_reservations_list" />
+
+</navigation>

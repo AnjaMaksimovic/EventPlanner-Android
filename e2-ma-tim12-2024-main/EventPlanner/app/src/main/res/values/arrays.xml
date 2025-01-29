@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="initial_slider_values">
+        <item>1500.0</item>
+        <item>2200.0</item>
+    </array>
+
+    <string-array name="category_values">
+        <item>Catering facilities</item>
+        <item>Accommodation</item>
+        <item>Music and entertainment</item>
+        <item>Photo and video</item>
+        <item>Decoration and lighting</item>
+        <item>Wardrobe and styling</item>
+        <item>Care and beauty</item>
+        <item>Planning and coordination</item>
+        <item>Invitations and stationery</item>
+        <item>Logistics and security</item>
+    </string-array>
+
+    <string-array name="subcategory_values">
+        <item>Catering and food preparation</item>
+        <item>Renting catering facilities</item>
+        <item>Menu planning</item>
+        <item>Food for events</item>
+        <item>Drinks</item>
+        <item>Sweets</item>
+        <item>Special products</item>
+    </string-array>
+
+    <string-array name="employee_values">
+        <item>Ava Johnson</item>
+        <item>Ethan Thompson</item>
+        <item>Sophia Martinez</item>
+        <item>Liam Anderson</item>
+    </string-array>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+
+</resources>

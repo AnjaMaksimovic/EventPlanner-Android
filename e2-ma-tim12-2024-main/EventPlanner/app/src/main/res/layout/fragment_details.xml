@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@color/white"
+    tools:context=".fragments.stakeholders.DetailsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/info_rbtn"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:text="@string/details_info"
+                android:textSize="20dp"/>
+
+            <RadioButton
+                android:id="@+id/calendar_rbtn"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:text="@string/work_calendar"
+                android:textSize="20dp"/>
+        </RadioGroup>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/details_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

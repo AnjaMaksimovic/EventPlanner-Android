@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etSubcategoryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter subcategory name" />
+
+    <EditText
+        android:id="@+id/etSubcategoryDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter subcategory description" />
+
+    <LinearLayout
+        android:layout_width="322dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:onClick="onCancelClicked"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:text="OK"
+            android:layout_weight="1"
+            android:onClick="onOkClicked" />
+
+    </LinearLayout>
+
+</LinearLayout>

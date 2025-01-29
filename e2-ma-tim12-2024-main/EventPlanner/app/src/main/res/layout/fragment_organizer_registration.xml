@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:id="@+id/registration_form_OD"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/email_address_field_OD"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/password_field_OD"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/repeat_field_OD"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="@string/password_repeat"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/name_field_OD"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/lastname_field_OD"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="@string/lastname"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/address_field_OD"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="@string/address"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/phone_field_OD"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="@string/phone"
+            android:inputType="phone|number" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="5dp">
+
+            <EditText
+                android:id="@+id/photo_path_edittext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/photo_path_hint"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:maxLines="1"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="4dp"/>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_add_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:src="@drawable/baseline_add_circle"
+                app:borderWidth="0dp"
+                app:elevation="8dp"
+                app:fabSize="normal"
+                app:maxImageSize="66dp"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Material3.Fab"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/register_btn_OD"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="80dp"
+            android:text="@string/confirmation" />
+
+    </LinearLayout>
+</ScrollView>

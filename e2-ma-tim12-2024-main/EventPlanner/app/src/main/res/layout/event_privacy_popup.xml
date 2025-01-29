@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="230dp"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RadioButton
+        android:id="@+id/option_private"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/event_privacy_private" />
+
+    <RadioButton
+        android:id="@+id/option_open"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/event_privacy_open" />
+
+</LinearLayout>
